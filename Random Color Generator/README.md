@@ -4,5 +4,19 @@ This is the first project- A random color generator. It is a simple static page,
 
 ## Preview 
 ![Example 1](https://github.com/Agnik7/Mini-Projects/blob/main/Random%20Color%20Generator/images/example2.png)
+
+
 ![Example 2](https://github.com/Agnik7/Mini-Projects/blob/main/Random%20Color%20Generator/images/example3.png)
+
+
 ![Example 3](https://github.com/Agnik7/Mini-Projects/blob/main/Random%20Color%20Generator/images/example4.png)
+
+## My Process
+- Desktop First Workflow
+- Used Math.random() to generate random color
+- DOM Manipulation in JavaScript
+
+## Languages Used
+- Semantic HTML5 Markup
+- CSS3 properties
+- Vanilla JavaScript
