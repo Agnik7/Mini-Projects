@@ -17,6 +17,10 @@ body{
 .container{
     display: flex;
 }
+img{
+    width: 50rem;
+    height: 35rem;
+}
 button{
     width: 5rem;
     height: 7rem;
