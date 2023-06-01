@@ -21,4 +21,4 @@ This is the fourth project- A simple image carousel. There are 2 buttons, one de
 - CSS3 properties
 - Vanilla JavaScript
 
-**Note: All the images have been referenced from Unsplash**
+**Note: All the images have been referenced from [Unsplash](https://unsplash.com/)**
