@@ -4,3 +4,5 @@ This repository contains a number of mini-projects to practice frontend developm
 ## Table of Contents
 1. [Last Delivered Message](https://github.com/Agnik7/Mini-Projects/tree/main/Last%20Delivered%20Message)
 2. [Random Color Generator](https://github.com/Agnik7/Mini-Projects/tree/main/Random%20Color%20Generator)
+3. [Counter](https://github.com/Agnik7/Mini-Projects/tree/main/Counter)
+4. [Image Carousel](https://github.com/Agnik7/Mini-Projects/tree/main/Image%20Carousel)
