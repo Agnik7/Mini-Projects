@@ -1,3 +1,5 @@
+
+
 const joke = document.querySelector(".joke");
 const generate = document.querySelector(".generate");
 const url = "https://api.chucknorris.io/jokes/random";

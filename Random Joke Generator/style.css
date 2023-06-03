@@ -22,7 +22,6 @@ body{
     min-width: 25rem;
     border-radius: 2rem;
     display: flex;
-    /* height: 15rem; */
     flex-direction: column;
     align-items: center;
     padding: 1rem;
