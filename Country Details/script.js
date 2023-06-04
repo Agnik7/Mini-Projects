@@ -5,6 +5,7 @@ const error = document.querySelector(".error");
 const capital = document.querySelector(".capital");
 const population = document.querySelector(".population");
 const continent = document.querySelector(".continent");
+const flag = document.querySelector("img");
 search.addEventListener('click',()=>{
     clear();
     if((input.value).length == 0)
@@ -23,7 +24,7 @@ search.addEventListener('click',()=>{
                 capital.innerHTML += data[0].capital;
                 population.innerHTML+=data[0].population;
                 continent.innerHTML += data[0].continents;
-
+                flag.src = data[0].flags.svg;
             })
             .catch((err)=>{
                 console.log(err);
@@ -38,4 +39,5 @@ function clear(){
     population.innerHTML='Population: ';
     continent.innerHTML = 'Continent: '; 
     document.querySelector(".country-details").style.display = "none";
+    flag.src = "";
 }

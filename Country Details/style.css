@@ -76,6 +76,14 @@ h1{
     display: none;
 
 }
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
 .detail{
     font-size: 1.2rem;
+}
+img{
+    width: 5rem;
+    height: 3rem;
 }
