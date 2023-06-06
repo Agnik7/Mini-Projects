@@ -8,3 +8,4 @@ This repository contains a number of mini-projects to practice frontend developm
 4. [Image Carousel](https://github.com/Agnik7/Mini-Projects/tree/main/Image%20Carousel)
 5. [Cursor Animation](https://github.com/Agnik7/Mini-Projects/tree/main/Cursor%20Animation)
 6. [Random Joke Generator](https://github.com/Agnik7/Mini-Projects/tree/main/Random%20Joke%20Generator)
+7. [Country Guide](https://github.com/Agnik7/Mini-Projects/tree/main/Country%20Details)
