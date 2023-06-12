@@ -17,9 +17,9 @@ next.addEventListener('click', ()=>{
 });
 
 const rotateGallery = ()=>{
-container.style.transform = `perspective(1000px) rotateY(${angle}deg)`;
+container.style.transform = `perspective(1300px) rotateY(${angle}deg)`;
 timer = setTimeout(()=>{
-    angle-=36;
+    angle-=45;
     rotateGallery();
 },3000);
 };
