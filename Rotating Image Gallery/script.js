@@ -21,7 +21,7 @@ container.style.transform = `perspective(1000px) rotateY(${angle}deg)`;
 timer = setTimeout(()=>{
     angle-=36;
     rotateGallery();
-},2000);
+},3000);
 };
 
 rotateGallery();
