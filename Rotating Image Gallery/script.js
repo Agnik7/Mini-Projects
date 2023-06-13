@@ -5,13 +5,13 @@ const next = document.querySelector(".next")
 let angle=0;
 let timer=0;
 prev.addEventListener('click',()=>{
-    angle+=36;
+    angle+=45;
     clearTimeout(timer);
     rotateGallery();
 });
 
 next.addEventListener('click', ()=>{
-    angle-=36;
+    angle-=45;
     clearTimeout(timer);
     rotateGallery()
 });
