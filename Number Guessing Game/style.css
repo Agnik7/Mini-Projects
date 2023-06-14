@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black:#040404;
+    --midnight-green: #13505B;
+    --cerulean: #0C7489;
+    --dark-cyan: #119DA4;
+    --timberwolf: #D7D9CE;    
+    --yellow: hsl(60, 100%, 61%);
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--black);
+    display: grid;
+    place-items: center;
+}
+.container{
+    background-color: var(--midnight-green);
+    color: var(--timberwolf);
+    max-width: 35rem;
+    padding: 2rem 5rem;
+    border-radius: 2rem;
+}
+.container>* + *{
+    margin: 0 1rem 1rem;
+}
+.container h1{
+    text-align: center;
+    margin: 2rem 0;
+}
+.container h2{
+    color: var(--yellow);
+    text-align: center;
+}
+.container input{
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+}
+.container .guess-status{
+    font-size: 1.5rem;
+    text-align: center;
+    display: none;
+}
+.container .btn{
+    display: flex;
+    justify-content: center;
+}
+.container .btn button{
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    background-color: var(--dark-cyan);
+    color: var(--timberwolf);
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+}
+.container .btn button:hover {
+    background-color: var(--cerulean);
+    cursor: pointer;
+}
+.container .chances{
+    font-size: 1.2rem;
+    text-align: center;
+}
