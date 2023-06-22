@@ -14,33 +14,16 @@ img:hover{
     animation: wobble 1.5s infinite;
 }
 @keyframes wobble {
-    0%{
+    0%, 75%,100%{
         transform: scale(1);
     }
-    25%{
+    25%, 80%{
         transform: scaleX(0.9) scaleY(1.1);
     }
-    50%{
+    50%,85%{
         transform: scaleX(0.8) scaleY(1.2);        
     }
-    62.5%{
+    62.5%,95%{
         transform: scaleX(1.2) scaleY(0.8);
     }
-    75%{
-        transform: scale(1);
-    }
-    80%{
-        transform: scaleX(0.9) scaleY(1.1);
-    }
-    85%{
-        transform: scaleX(0.8) scaleY(1.2);
-    }
-    95%{
-        transform: scaleX(1.2) scaleY(0.8);
-    }
-
-    100%{
-        transform: scale(1);
-    }
-    
 }
