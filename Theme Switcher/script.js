@@ -66,7 +66,7 @@ function Sunrise(){
     Root.style.setProperty('--navbar','#F0A202');
     Root.style.setProperty('--container','#F18805');
     Root.style.setProperty('--cards','#D95D39');
-    Root.style.setProperty('--card-h2','#8E7DBE');
+    Root.style.setProperty('--card-h2','#581F18');
     Root.style.setProperty('--footer','#581F18');
     Root.style.setProperty('--footer-text','#F18805');
     Root.style.setProperty('--nav-text','#000000');
@@ -75,7 +75,7 @@ function Daylight(){
     Root.style.setProperty('--navbar','#29339B');
     Root.style.setProperty('--container','#74A4BC');
     Root.style.setProperty('--cards','#B6D6CC');
-    Root.style.setProperty('--card-h2','#FF3A20');
+    Root.style.setProperty('--card-h2','#8E7DBE');
     Root.style.setProperty('--footer','#F1FEC6');
     Root.style.setProperty('--footer-text','#000000');
     Root.style.setProperty('--nav-text','#ffffff');
