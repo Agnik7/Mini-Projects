@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black:#212121;
+    --yellow: #ffff00;
+    --saffron: #EEC643;
+    --goldenrod: #A58B33;
+}
+body{
+    background-color: var(--black);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.container{
+    max-width: 50rem;
+    margin: 2rem;
+    padding: 3rem;
+}
+i{
+    color: white;
+    font-size: 10rem;
+    margin: 2rem 4rem;
+    /* filter: drop-shadow(0 0 8px var(--yellow)); */
+    transition: all 0.5s ease-in-out;
+}
+button{
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    background-color: var(--saffron) ;
+    margin: 3rem 3.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+}
+button:hover{
+    
+    background-color: var(--goldenrod) ;
+    cursor: pointer;
+}
