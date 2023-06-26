@@ -28,6 +28,6 @@ but.addEventListener('click',()=>{
 })
 
 clipboard.addEventListener('click',()=>{
-    navigator.clipboard.writeText(passwordShow.value)
-    alert("Copied to clipboard")
+    navigator.clipboard.writeText(passwordShow.value);
+    alert("Copied to clipboard");
 })
