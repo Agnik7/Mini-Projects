@@ -4,6 +4,7 @@ const bulb = document.querySelector("#bulb");
 let flag = 0; // flag=0 --> Off |||||| flag=1 --> On
 
 button.addEventListener('click',()=>{
+    console.log(window.getComputedStyle( bulb,null).getPropertyValue('color'));
     if(flag == 0)
     {
         state.innerHTML = 'Off';
