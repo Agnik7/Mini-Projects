@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --bg-navbar: #B2967D;
+    --bg-body: #ECF8F8;
+    --bg-button: #E6BEAE;
+    --font-col: #212121;
+    --font-hover: #E7D8C9;
+}
+body{
+    background-color: var(--bg-body);
+}
+
+/* Styling for navbar*/
+.navbar{
+    background-color: var(--bg-navbar);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+.navbar *, .navbar .tabs *{
+    color: var(--font-col);
+}
+.navbar .tabs{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.navbar .tabs button{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.navbar .tabs button img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    margin-block: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.navbar ul li:hover, .navbar ul li:active{
+    color: var(--font-hover);
+    cursor: pointer;
+}
+.navbar h1{
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*Styling for main body*/
+
+.main-body{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-body *{
+    color: var(--font-col);
+}
+.main-body .text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-body .text-content h2{
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    text-align: start;
+}
+.main-body .text-content *{
+    margin: 0.5rem;
+}
+.main-body .text-content p{
+    width: 60%;
+    margin-inline: 1rem auto;
+    word-wrap: break-word;
+    font-size: 1.2rem;
+}
+.main-body .text-content .get-started{
+    width: 100%;
+}
+.main-body .text-content button{
+    padding: 0.5rem 3rem;
+    cursor: pointer;
+    background-color: var(--bg-button);
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    outline: none;
+}
+
+.main-body .text-content button:hover{
+    background-color: var(--bg-navbar);
+    transition: background-color 0.2s ease-out;
+}
+
+
+@media (prefers-color-scheme: dark)
+{
+    :root{
+        --bg-navbar: #2D2327;
+        --bg-body: #45364B;
+        --bg-button: #2F0A28;
+        --font-col: #B5C2B7;
+        --font-hover: #E7D8C9;
+    }
+}
+@media (prefers-color-scheme: light)
+{
+    :root{
+        --bg-navbar: #B2967D;
+        --bg-body: #ECF8F8;
+        --bg-button: #E6BEAE;
+        --font-col: #212121;
+        --font-hover: #E7D8C9;
+    }
+}
