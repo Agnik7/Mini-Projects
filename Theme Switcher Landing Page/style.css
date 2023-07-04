@@ -11,6 +11,9 @@
     --font-col: #212121;
     --font-hover: #E7D8C9;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--bg-body);
 }
@@ -62,7 +65,8 @@ body{
 
 /*Styling for main body*/
 
-.main-body{
+.main-body .part-one, .main-body .part-three{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -80,6 +84,7 @@ body{
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: 0.2rem;
+    padding-inline: 0.5rem;
     text-align: start;
 }
 .main-body .text-content *{
@@ -105,12 +110,107 @@ body{
     outline: none;
 }
 
-.main-body .text-content button:hover{
+.main-body .text-content button:hover, .main-body .part-three .text .form .send:hover{
     background-color: var(--bg-navbar);
     transition: background-color 0.2s ease-out;
 }
 
 
+.main-body .part-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-body .part-two h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.main-body .part-two .testimonials{
+    width: 80%;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-inline: auto;
+}
+.main-body .part-two .testimonials .testimonial-card{
+    background-color: var(--bg-navbar);
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 30rem;
+    margin: 1rem;
+}
+.main-body .part-two .testimonials .testimonial-card .testimonial-content{
+    margin-inline: 3rem;
+}
+.main-body .part-two .testimonials .testimonial-card  i{
+    color: var(--font-col);
+    font-size: 4rem;
+}
+.main-body .part-two .testimonials .testimonial-card .testimonial-content .testimony{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.main-body .part-two .testimonials .testimonial-card .testimonial-content .name{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-block: 0.5rem;
+}
+
+
+
+.main-body .part-three h2{
+    font-size: 2.5rem;
+    margin: 5rem 1rem 1rem;
+}
+
+.main-body .part-three{
+    padding: 1rem;
+}
+
+.main-body .part-three .text .form{
+    display: flex;
+    width: 80%;
+    margin-inline: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-body .part-three .text .form input{
+    width: 100%;
+    margin: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid var(--font-col);
+    outline: none;
+}
+::placeholder{
+    color: var(--font-col);
+}
+.main-body .part-three .text .form textarea{
+    background-color: transparent;
+    width: 100%;
+    resize: none;
+    border: 3px solid var(--font-col);
+    border-radius: 1rem;
+    height: 20rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin: 2rem 2rem 0;
+}
+.main-body .part-three .text .form .send{
+    margin: 1rem;
+    padding: 0.5rem 3rem;
+    cursor: pointer;
+    background-color: var(--bg-button);
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    outline: none;
+}
 @media (prefers-color-scheme: dark)
 {
     :root{
