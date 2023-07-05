@@ -50,19 +50,10 @@ header, .mid-image{
 .container{
     transform: translateY(-30%);
 }
-#forest{
-    width: 100vw;
-    height: 100vh;
-}
-.back, .front{
+.back{
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-.back{
     transform: translateZ(-10px) scale(2);
-}
-.front{
-    transform: translateZ(-5px) scale(1.5);
 }
