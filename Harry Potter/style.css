@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --bg-nav:#AE0001;
+    --font-col: #EEBA30;
+    --bg-main: #740001;
+    --font-head: #C0C0C0;
+    --font-hov:  #D3A625;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-nav);
+}
+.logo img{
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap:1rem;
+    margin-block: auto;
+}
+nav ul li{
+    font-size: 1.2rem;
+    color: var(--font-col);
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: var(--font-hov);
+}
+.body{
+    background-color: var(--bg-main);
+}
+main section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+}
+h1{
+    color: var(--font-head);
+    font-size: 4rem;
+    margin-block: auto;
+}
+.part-1 .text{
+    width: 60%;
+    padding: 1rem;
+}
+p{
+    font-size: 1.3rem;
+    color: var(--font-col);
+    margin:1rem 0 2rem ;
+}
+button{
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    background-color: var(--font-col);
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--font-hov);
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.part-2 .text{
+    padding-inline: 1rem;
+}
