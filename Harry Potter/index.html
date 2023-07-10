@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
@@ -12,66 +13,107 @@
             <img src="./logo.png" alt="Logo">
         </div>
         <ul>
-            <li>Philosopher's Stone</li>
-            <li>Chamber of Secrets</li>
-            <li>Prisoner of Azkaban</li>
-            <li>Goblet of Fire</li>
-            <li>Order of the Phoenix</li>
-            <li>Half Blood Prince</li>
-            <li>Deathly Hallows</li>
+            <li id="gryffindor">Gryffindor</li>
+            <li id="slytherin">Syltherin</li>
+            <li id="hufflepuff">Hufflepuff</li>
+            <li id="ravenclaw">Ravenclaw</li>
         </ul>
     </nav>
     <main class="body">
-        <section class="part-1" id="part-1">
-            <div class="text">
-                <h1>Welcome to Hogwarts!!</h1>
-                <p>We welcome you onboard to embark on a lifelong journey of magic and fun. Fighting Voldemort is not the only thing that wizards do. There's a lot more!!</p>
-                <button class="get-started"><a href="#part-2">I'm in!!</a></button>
-            </div>
-            <div class="image">
-                <img src="./dumbledore.png" alt="dumbledore">
-            </div>
-        </section>
-        <section class="part-2" id="part-2">
-            <div class="text">
-                <h1>Blimey! Me didn't see you there, that is!</h1>
-                <p>Me is Hagrid, I am. The great Gamekeeper and the Keeper of Keys, me is the most loyal follower of Dumbledore there is. Wanna see cool magical creatures, come to me!!</p>
-                <button class="get-started"><a href="#part-3">Next</a></button>
-            </div>
-            <div class="image">
-                <img src="./hagrid.png" alt="hagrid">
-            </div>
-        </section>
-        <section class="part-3" id="part-3">
-            <div class="text">
-                <h1>It's Me. I'm Extremely Famous.</h1>
-                <p>Hi, I'am Ron Weasley, Harry's best friend. Nice to meet you!! I like fun and games, but when needed, I can be very powerful. Wanna know how to take care of a rat or the Government, visit me at the Ministry!!</p>
-                <button class="get-started"><a href="#part-4">Next</a></button>
-            </div>
-            <div class="image">
-                <img src="./ron.png" alt="ron">
-            </div>
-        </section>
-        <section class="part-4" id="part-4">
-            <div class="text">
-                <h1>Wingardium Leviosa.</h1>
-                <p>Hi, Hermoine Granger this side!! Apart from being Ron's wife, I am also Harry's best friend. The wizard having the greatest knowledge of spells, I will meet you soon in your Defense against the Dark Arts class!</p>
-                <button class="get-started"><a href="#part-5">Next</a></button>
-            </div>
-            <div class="image">
-                <img src="./hermoine.png" alt="hermoine">
-            </div>
-        </section>
-        <section class="part-5" id="part-5">
-            <div class="text">
-                <h1>Expecto Patronum!!</h1>
-                <p>Hi, This is Harry Potter, the current Headmaster of Hogwarts!! After defeating Voldemort with the help of my friends Ron and Hermoine, I have looked over Hogwarts ever since! No one can run away from my sight, not even the Golden Snitch. But don't worry, I'll not be very strict, you will spend your school life at Hogwarts learning wizadry the fun way. Looking forward to see you in class!!</p>
-                <p>P.S. : If you didn't notice yet, the color scheme of the page is actually the color scheme of Gryffindor</p>
-                <button class="get-started"><a href="#part-1">Back to top</a></button>
-            </div>
-            <div class="image">
-                <img src="./harry.png" alt="harry">
-            </div>
+        <section class="gryffindor">
+            <section class="part-1" id="part-1">
+                <div class="text">
+                    <h1>Welcome to Gryffindor!!</h1>
+                    <p>We welcome you onboard to embark on a lifelong journey of magic and fun. We will lead the life in the most righteous, honest and joyous way, just like Godric Gryffindor!!</p>
+                    <button class="get-started"><a href="#part-2">I'm in!!</a></button>
+                </div>
+                <div class="image">
+                    <img src="./dumbledore.png" alt="dumbledore">
+                </div>
+            </section>
+            <section class="part-2" id="part-2">
+                <div class="text">
+                    <h1>Blimey! Me didn't see you there, that is!</h1>
+                    <p>Me is Hagrid, I am. The great Gamekeeper and the Keeper of Keys, me is the most loyal follower of Dumbledore there is. Wanna see cool magical creatures, come to me!!</p>
+                    <button class="get-started"><a href="#part-3">Next</a></button>
+                </div>
+                <div class="image">
+                    <img src="./hagrid.png" alt="hagrid">
+                </div>
+            </section>
+            <section class="part-3" id="part-3">
+                <div class="text">
+                    <h1>It's Me. I'm Extremely Famous.</h1>
+                    <p>Hi, I'am Ron Weasley, Harry's best friend. Nice to meet you!! I like fun and games, but when needed, I can be very powerful. Wanna know how to take care of a rat or the Government, visit me at the Ministry!!</p>
+                    <button class="get-started"><a href="#part-4">Next</a></button>
+                </div>
+                <div class="image">
+                    <img src="./ron.png" alt="ron">
+                </div>
+            </section>
+            <section class="part-4" id="part-4">
+                <div class="text">
+                    <h1>Wingardium Leviosa.</h1>
+                    <p>Hi, Hermoine Granger this side!! Apart from being Ron's wife, I am also Harry's best friend. The wizard having the greatest knowledge of spells, I will meet you soon in your Defense against the Dark Arts class!</p>
+                    <button class="get-started"><a href="#part-5">Next</a></button>
+                </div>
+                <div class="image">
+                    <img src="./hermoine.png" alt="hermoine">
+                </div>
+            </section>
+            <section class="part-5" id="part-5">
+                <div class="text">
+                    <h1>Expecto Patronum!!</h1>
+                    <p>Hi, This is Harry Potter, the current Headmaster of Hogwarts!! After defeating Voldemort with the help of my friends Ron and Hermoine, I have looked over Hogwarts ever since! No one can run away from my sight, not even the Golden Snitch. But don't worry, I'll not be very strict, you will spend your school life at Hogwarts learning wizadry the fun way. Looking forward to see you in class!!</p>
+                    <p>P.S. : If you didn't notice yet, the color scheme of the page is actually the color scheme of Gryffindor</p>
+                    <button class="get-started"><a href="#part-1">Back to top</a></button>
+                </div>
+                <div class="image">
+                    <img src="./harry.png" alt="harry">
+                </div>
+            </section>
+        </section>  
+        <section class="slytherin">
+            <section class="part-1" id="part-1s">
+                <div class="text">
+                    <h1>Welcome to Syltherin!!</h1>
+                    <p>Ready for ssssome funn?? Say no more! Join the most elite house of all! Rule over everyone by becoming a Slytherin!</p>
+                    <button class="get-started"><a href="#part-2s">I'm in!!</a></button>
+                </div>
+                <div class="image">
+                    <img src="./salazar.png" alt="salazar">
+                </div>
+            </section>
+            <section class="part-2" id="part-2s">
+                <div class="text">
+                    <h1>Obviously.</h1>
+                    <p>Greetings, this is Professor Severus Snape. I will be taking up the role of Potions master this year. I expect everyone to be attentive, and always listen to what I say. See you in class.</p>
+                    <button class="get-started"><a href="#part-3s">Next</a></button>
+                </div>
+                <div class="image">
+                    <img src="./snape.png" alt="snape">
+                </div>
+            </section>
+            <section class="part-3" id="part-3s">
+                <div class="text">
+                    <h1>Trust Me, I Was Chosen.</h1>
+                    <p>Hey there, I'm Draco Malfoy!! I used to be a Death Eater, but now I am freed from that world. Currently I am working in Azkaban looking over some of the most viscious Death Eaters, so that they don't escape.</p>
+                    <button class="get-started"><a href="#part-4s">Next</a></button>
+                </div>
+                <div class="image">
+                    <img src="./malfoy.png" alt="draco">
+                </div>
+            </section>
+            <section class="part-4" id="part-4s">
+                <div class="text">
+                    <h1>Avada Kedavra.</h1>
+                    <p>I am Tom Malvoro Riddle, but you can also call me Lord Voldemort. I might not have a nose, but I can smell fear very actively. Pray that I don't return, otherwise I might as well make you my Horcrux.</p>
+                    <button class="get-started"><a href="#part-1s">Back to top</a></button>
+                </div>
+                <div class="image">
+                    <img src="./voldemort.png" alt="voldemort">
+                </div>
+            </section>
         </section>
     </main>
 </body>

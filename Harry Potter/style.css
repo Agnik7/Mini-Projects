@@ -10,6 +10,7 @@
     --bg-main: #740001;
     --font-head: #C0C0C0;
     --font-hov:  #D3A625;
+    --button-col: #000000;
 }
 html{
     scroll-behavior: smooth;
@@ -28,7 +29,7 @@ nav{
 nav ul{
     display: flex;
     list-style: none;
-    gap:1rem;
+    gap:5rem;
     margin-block: auto;
 }
 nav ul li{
@@ -39,10 +40,24 @@ nav ul li{
 nav ul li:hover{
     color: var(--font-hov);
 }
+nav ul li:active{
+    color: var(--font-head);
+    text-decoration: underline;
+}
+#gryffindor{
+    color: var(--font-head);
+    text-decoration: underline;
+}
 .body{
     background-color: var(--bg-main);
 }
-main section{
+main .gryffindor{
+    display: block;
+}
+main .slytherin{
+    display: none;
+}
+main .gryffindor section, main .slytherin section{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,8 +93,8 @@ button:hover{
 }
 a{
     text-decoration: none;
-    color: black;
+    color: var(--button-col);
 }
-.part-2 .text{
+.text{
     padding-inline: 1rem;
 }
