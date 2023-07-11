@@ -54,10 +54,10 @@ nav ul li:active{
 main .gryffindor{
     display: block;
 }
-main .slytherin{
+main .slytherin, main .hufflepuff, main .ravenclaw{
     display: none;
 }
-main .gryffindor section, main .slytherin section{
+main .gryffindor section, main .slytherin section, main .hufflepuff section, main .ravenclaw section{
     display: flex;
     justify-content: space-between;
     align-items: center;
