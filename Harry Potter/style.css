@@ -14,6 +14,7 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 nav{
     padding: 0.5rem 2rem;
@@ -26,11 +27,17 @@ nav{
     height: 5rem;
     margin: auto;
 }
+.tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 nav ul{
     display: flex;
+    align-items: center;
     list-style: none;
     gap:5rem;
-    margin-block: auto;
 }
 nav ul li{
     font-size: 1.2rem;
@@ -44,6 +51,19 @@ nav ul li:active{
     color: var(--font-head);
     text-decoration: underline;
 }
+.hamburger{
+    display: none;
+    background-color: transparent;
+}
+.hamburger:hover, .hamburger:active{
+    background-color: transparent;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+.hamburger svg path{
+    fill: var(--font-head);
+}
+
 #gryffindor{
     color: var(--font-head);
     text-decoration: underline;
@@ -73,6 +93,11 @@ h1{
     width: 60%;
     padding: 1rem;
 }
+.part-1 .image{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
 p{
     font-size: 1.3rem;
     color: var(--font-col);
@@ -97,4 +122,29 @@ a{
 }
 .text{
     padding-inline: 1rem;
+}
+
+@media (max-width: 1000px) {
+    main .gryffindor section, main .slytherin section, main .hufflepuff section, main .ravenclaw section{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    .part-1 .image{
+        margin-bottom: -3rem;
+    }
+}
+@media (max-width: 870px) {
+    .tabs{
+        margin-inline: 3rem ;
+    }
+    .hamburger{
+        display: block;
+    }
+    .tabs ul{
+        flex-direction: column;
+    }
+    .tabs ul li{
+        display: none;
+
+    }
 }
